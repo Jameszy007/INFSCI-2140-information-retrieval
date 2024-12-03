@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Search Results</h2>
+{% for result in results %}
+    <div class="job-listing">
+        <h3>{{ result['job_title'] }} at {{ result['company_name'] }}</h3>
+        <p>Location: {{ result['location'] }}</p>
+        <p>Company Review: {{ result['pros'] }} - {{ result['cons'] }}</p>
+    </div>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Search for Jobs with Company Reviews</h2>
+<form method="post" action="/search">
+    <label for="job_title">Job Title:</label>
+    <input type="text" id="job_title" name="job_title">
+
+    <label for="location">Location:</label>
+    <input type="text" id="location" name="location">
+
+    <label for="review_query">Company Review Keywords:</label>
+    <input type="text" id="review_query" name="review_query">
+
+    <button type="submit">Search Jobs</button>
+</form>
+{% endblock %}
